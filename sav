@@ -1,0 +1,19 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    vector<int> v = {3, 5, 3};
+    int a= v.size();
+    for (int i = 0; i < a; i++) {
+        v.insert(v.end(), v[i]);
+
+
+    }
+    for (int i = 0; i < v.size(); i++) {
+        cout << "Nums: " << v[i] << endl;
+    }
+
+    return 0;
+}
